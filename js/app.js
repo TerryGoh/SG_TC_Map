@@ -381,9 +381,7 @@ var createTCMarkers = (id) => {
         console.log(tc.mapPosition);
         marker = new google.maps.Marker({
             position: tc.mapPosition,
-            //      map: map,
-            title: tc.TC + tc.address,
-            //      icon: loadMarkerIcon(tc.imgUrl),
+            title: `${tc.TC} : ${tc.address}`,
             icon: loadMarkerIcon(TC_ImgLogo[id]),
 
 
