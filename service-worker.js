@@ -7,7 +7,7 @@ var cacheAssets =
 		"./img/A-H.png",
 		"./img/HL-BP.jpg",
 		"./img/JB_TC.png ",
-		"./img/JR-CT_TC.JPG",
+		"./img/JR-CT_TC.jpg",
 		"./img/CCK_TC.jpg",
 		"./img/EC-FS_TC.png",
 		"./img/AMK_TC.jpg",
