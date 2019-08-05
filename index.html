@@ -32,6 +32,33 @@
             margin-right: 20px;
             margin-left: 20px;
         }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: 50px;
+            left: 50%;
+            margin-left: -60px;
+            /* Use half of the width (120/2 = 60), to center the tooltip */
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-zNHnUc5GoPIHriflvM8mNxImltDtVsU "></script>
 
@@ -39,35 +66,86 @@
 
 <body>
     <div>
-        <img id="A_H" class="TC" src="./img/A-H_TC.jpg" style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">ALJUNIED - HOUGANG TC</span>
+            <img id="A_H" class="TC" src="./img/A-H_TC.jpg" style="width:100px;height:80px;">
+        </div>
 
-        <img id="AMK" class="TC" src="./img/AMK_TC.jpg" style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">AMK TC</span>
+            <img id="AMK" class="TC" src="./img/AMK_TC.jpg" style="width:100px;height:80px;">
+        </div>
 
-        <img id="BT" class="TC" src="./img/BH-TP_TC.jpg" style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">Bishan - Toa Payho TC</span>
+            <img id="BT" class="TC" src="./img/BH-TP_TC.jpg" style="width:100px;height:80px;">
+        </div>
 
-        <img id="CCK" class="TC" src="./img/CCK_TC.jpg" style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">CCK TC</span>
+            <img id="CCK" class="TC" src="./img/CCK_TC.jpg" style="width:100px;height:80px;">
+        </div>
+        <div class="tooltip">
+            <span class="tooltiptext">East Coast - Fengshan TC</span>
 
-        <img id="EC_FS" class="TC" src="./img/EC-FS_TC.png" style="width:100px;height:80px;">
+            <img id="EC_FS" class="TC" src="./img/EC-FS_TC.png" style="width:100px;height:80px;">
+        </div>
 
-        <img id="HL_BP" class="TC" src="./img/HL-BP.jpg" style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">Holland Village - Bukit Panjang TC</span>
+            <img id="HL_BP" class="TC" src="./img/HL-BP.jpg" style="width:100px;height:80px;">
+        </div>
 
-        <img id="JB" class="TC" src="./img/JB_TC.png" style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">Jalan Besar TC</span>
+            <img id="JB" class="TC" src="./img/JB_TC.png" style="width:100px;height:80px;">
+        </div>
 
-        <img id="JR" class="TC" src="./img/JR-CT_TC.jpg" style="width:90px;height:80px;">
-        
-        <img id="MP" class="TC" src="./img/MP_TC.png" style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">Jurong - Clementi TC</span>
+            <img id="JR" class="TC" src="./img/JR-CT_TC.jpg" style="width:90px;height:80px;">
+        </div>
 
-        <img id="MS" class="TC" src="./img/MS-YT_TC.png" style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">Marine Parade TC</span>
+            <img id="MP" class="TC" src="./img/MP_TC.png" style="width:100px;height:80px;">
+        </div>
 
-        <img id="NS" class="TC" src="./img/NS_TC.png" style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">Marsiling - Yew Tee TC</span>
+            <img id="MS" class="TC" src="./img/MS-YT_TC.png" style="width:100px;height:80px;">
+        </div>
 
-        <img id="PP" class="TC" src="./img/PR-PG_TC.png"  style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">Nee Soon TC</span>
+            <img id="NS" class="TC" src="./img/NS_TC.png" style="width:100px;height:80px;">
+        </div>
 
-        <img id="SW" class="TC" src="./img/SW_TC.jpg" style="width:100px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">Pasir Ris - Pungol TC</span>
+            <img id="PP" class="TC" src="./img/PR-PG_TC.png" style="width:100px;height:80px;">
+        </div>
 
-        <img id="TP" class="TC" src="./img/TP_TC.jpg" style="width:100px;height:80px;">
-        <img id="TJP" class="TC" src="./img/TJP_TC.jpg" style="width:100px;height:80px;">
-        <img id="WC" class="TC" src="./img/WC_TC.jpg" style="width:150px;height:80px;">
+        <div class="tooltip">
+            <span class="tooltiptext">Sembawang TC</span>
+            <img id="SW" class="TC" src="./img/SW_TC.jpg" style="width:100px;height:80px;">
+        </div>
+
+        <div class="tooltip">
+            <span class="tooltiptext">Tampinese TC</span>
+            <img id="TP" class="TC" src="./img/TP_TC.jpg" style="width:100px;height:80px;">
+        </div>
+
+        <div class="tooltip">
+            <span class="tooltiptext">Tanjong Pagar TC</span>
+            <img id="TJP" class="TC" src="./img/TJP_TC.jpg" style="width:100px;height:80px;">
+        </div>
+
+        <div class="tooltip">
+            <span class="tooltiptext">West Coast TC</span>
+            <img id="WC" class="TC" src="./img/WC_TC.jpg" style="width:150px;height:80px;">
+        </div>
+
 
     </div>
     <div id="map"></div>
